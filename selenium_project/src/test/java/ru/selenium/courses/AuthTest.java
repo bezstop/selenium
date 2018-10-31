@@ -1,12 +1,12 @@
- package ru.selenium.courses;
+package ru.selenium.courses;
 
-        import org.junit.After;
-        import org.junit.Assert;
-        import org.junit.Before;
-        import org.junit.Test;
-        import org.openqa.selenium.WebElement;
-        import org.openqa.selenium.chrome.ChromeDriver;
-        import org.openqa.selenium.support.ui.WebDriverWait;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AuthTest {
 
@@ -140,32 +140,5 @@ public class AuthTest {
         driver.findElementByXPath("//span[contains(text(),'Users')]").click();
         checkH1Element();
         driver.findElementByXPath("//span[contains(text(),'vQmods')]").click();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
