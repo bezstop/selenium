@@ -1,16 +1,13 @@
 package ru.selenium.courses;
 
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 
 
 //Задание 8. Сделайте сценарий, проверяющий наличие стикеров у товаров
 public class CheckStickersTest extends AuthTunes {
-
     int productOnPageCount,stickerListCount;
     private     List<WebElement> imageWrapper;
 
@@ -23,8 +20,8 @@ public class CheckStickersTest extends AuthTunes {
             imageWrapper.get(i);
             System.out.println("Всео элементов" + productOnPageCount);
             int stickerListCount = driver.findElementsByCssSelector("li.product .sticker").size();
-                System.out.println("всего стикеров:" + stickerListCount);
-                Assert.assertTrue(stickerListCount == productOnPageCount);
+            System.out.println("всего стикеров:" + stickerListCount);
+            Assert.assertTrue(stickerListCount == productOnPageCount);
             }
         }
     }
